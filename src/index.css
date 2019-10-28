@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+* {
+  font-family: monospace;
+}
+
+/*FORCE ADOPTION*/
+input,
+button,
+li {
+  font-size: inherit;
+  padding: 8px;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  padding: 0;
+}
+
+li:nth-child(odd) {
+  background-color: #eee;
+}
+li:nth-child(even) {
+  background-color: #ddd;
+}
+
+.validation {
+  background-color: rgba(247, 20, 66, 0.16);
+  display: block;
+  color: crimson;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 0 0 4px 4px;
+}
+
+.validation.hidden {
+  display: none;
+}
+
+.validation.notHidden {
+  display: block;
 }
