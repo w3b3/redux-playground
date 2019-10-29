@@ -3,6 +3,7 @@ import "./App.css";
 import Top from "./components/Top";
 import Bottom from "./components/Bottom";
 import UserList from "./containers/user-list";
+import UserDetail from "./containers/user-detail";
 
 function App() {
   /*CONSTANTS - MOCK DATA*/
@@ -71,6 +72,7 @@ function App() {
         The new kid
       </h2>
       <UserList />
+      <UserDetail />
     </div>
   );
 }

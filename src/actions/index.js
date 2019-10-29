@@ -2,7 +2,7 @@
 export const selectUser = user => {
   console.info("[action] selectUser", user);
   return {
-    type: "USER_CLICKED",
+    type: "USER_SELECTED",
     data: user
   };
 };

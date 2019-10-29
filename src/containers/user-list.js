@@ -20,10 +20,10 @@ class UserList extends Component {
 
   render() {
     return (
-      <ol>
+      <ul>
         {/*This local/dump component must inherit the props of the parent(who has state)*/}
         <LocalList {...this.props} />
-      </ol>
+      </ul>
     );
   }
 }
