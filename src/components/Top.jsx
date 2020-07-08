@@ -5,7 +5,7 @@ const Top = (props) => {
 
   return show ? (
     <header style={{ display: "flex", flexDirection: "column" }}>
-      I'm the header
+      <span>{`I'm the header`}</span>
     </header>
   ) : null;
 };

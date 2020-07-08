@@ -1,5 +1,5 @@
 import React from "react";
 
-const Bottom = (props) => <div>I'm the body</div>;
+const Bottom = () => <div>{`I'm the body`}</div>;
 
 export default Bottom;
