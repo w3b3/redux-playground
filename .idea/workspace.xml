@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bff775d7-0566-46cf-a6ad-514a3fb5fd60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Bottom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bottom.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Top.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Top.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/user-detail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/user-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer-active-user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer-movies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer-users.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +34,22 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -53,31 +71,41 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="major dependency updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="major dependency updates" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1368" y="279" key="CommitChangelistDialog2" timestamp="1594240509785">
+    <state x="1368" y="279" key="CommitChangelistDialog2" timestamp="1594240868769">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1368" y="279" key="CommitChangelistDialog2/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240509785" />
-    <state width="522" height="1018" key="GridCell.Tab.0.bottom" timestamp="1594240302221">
+    <state x="1368" y="279" key="CommitChangelistDialog2/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240868769" />
+    <state width="522" height="1018" key="GridCell.Tab.0.bottom" timestamp="1594240815617">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="522" height="1018" key="GridCell.Tab.0.bottom/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240302221" />
-    <state width="522" height="1018" key="GridCell.Tab.0.center" timestamp="1594240302220">
+    <state width="522" height="1018" key="GridCell.Tab.0.bottom/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240815617" />
+    <state width="522" height="1018" key="GridCell.Tab.0.center" timestamp="1594240815616">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="522" height="1018" key="GridCell.Tab.0.center/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240302220" />
-    <state width="522" height="1018" key="GridCell.Tab.0.left" timestamp="1594240302220">
+    <state width="522" height="1018" key="GridCell.Tab.0.center/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240815616" />
+    <state width="522" height="1018" key="GridCell.Tab.0.left" timestamp="1594240815615">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="522" height="1018" key="GridCell.Tab.0.left/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240302220" />
-    <state width="522" height="1018" key="GridCell.Tab.0.right" timestamp="1594240302221">
+    <state width="522" height="1018" key="GridCell.Tab.0.left/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240815615" />
+    <state width="522" height="1018" key="GridCell.Tab.0.right" timestamp="1594240815616">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="522" height="1018" key="GridCell.Tab.0.right/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240302221" />
-    <state x="1284" y="331" key="SettingsEditor" timestamp="1594240421037">
+    <state width="522" height="1018" key="GridCell.Tab.0.right/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240815616" />
+    <state x="1284" y="331" key="SettingsEditor" timestamp="1594241356982">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1284" y="331" key="SettingsEditor/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240421037" />
+    <state x="1284" y="331" key="SettingsEditor/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594241356982" />
+    <state x="1382" y="432" key="Vcs.Push.Dialog.v2" timestamp="1594240873745">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1382" y="432" key="Vcs.Push.Dialog.v2/396.1440.1680.967/0.0.2560.1440@0.0.2560.1440" timestamp="1594240873745" />
     <state x="1469" y="487" key="git4idea.merge.GitPullDialog" timestamp="1594240291976">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

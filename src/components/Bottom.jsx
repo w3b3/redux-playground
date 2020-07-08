@@ -1,11 +1,5 @@
 import React from "react";
 
-const Bottom = props => (
-  <ol>
-    {props.users.map(user => (
-      <li key={user.id}>{user.name}</li>
-    ))}
-  </ol>
-);
+const Bottom = () => <div>{`I'm the body`}</div>;
 
 export default Bottom;
