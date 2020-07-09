@@ -17,12 +17,18 @@ const useStyles = makeStyles({
   },
   title: {
     fontSize: 14,
+    textTransform: "capitalize",
+    textDecoration: "underline",
   },
   link: {
     fontSize: 10,
   },
   media: {
     paddingTop: "56.25%", // 16:9
+  },
+  actions: {
+    display: "flex",
+    justifyContent: "space-around",
   },
 });
 // const Bottom = (props) => {
@@ -53,7 +59,7 @@ const SinglePhoto = (props) => {
         </Typography>
         <Link
           className={classes.link}
-          color={"secondary"}
+          color={"textSecondary"}
           gutterBottom={true}
           href={data.links.html}
         >
@@ -66,7 +72,7 @@ const SinglePhoto = (props) => {
           title={data.alt_description}
         />
       </CardContent>
-      <CardActions>
+      <CardActions className={classes.actions}>
         <Button size="small">Previous</Button>
         <Button size="small">Next</Button>
       </CardActions>
