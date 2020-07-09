@@ -44,10 +44,11 @@ const Bottom = React.memo(function Bottom(props) {
     <CircularProgress />
   );
 });
+// };
 
 /*Below a comparison between React (default) and Memo*/
-const SinglePhoto = (props) => {
-  // const SinglePhoto = React.memo(function SinglePhoto(props) {
+// const SinglePhoto = (props) => {
+const SinglePhoto = React.memo(function SinglePhoto(props) {
   const { data } = props;
   const classes = useStyles();
 
@@ -78,7 +79,7 @@ const SinglePhoto = (props) => {
       </CardActions>
     </Card>
   );
-}; // React default behaviour - renders twice
-// }); // React memo behaviour - renders once
+  // }; // React default behaviour - renders twice
+}); // React memo behaviour - renders once
 
 export default Bottom;
