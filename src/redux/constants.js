@@ -1,0 +1,7 @@
+const IMAGES = {
+  LOAD: "LOAD",
+  LOAD_FAIL: "LOAD_FAIL",
+  LOAD_SUCCESS: "LOAD_SUCCESS",
+};
+
+export { IMAGES };

@@ -4,7 +4,10 @@ import "./App.css";
 import Bottom from "./components/Bottom";
 import Container from "@material-ui/core/Container";
 import { callApi } from "./api";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
+const rootStore = store();
 function App() {
   // const [loading, setLoading] = useState(true);
   const [apiResponse, setApiResponse] = useState({});
@@ -17,10 +20,12 @@ function App() {
   }, []);
 
   return (
-    <Container className="App">
-      {/*<Top show={!loading} />*/}
-      <Bottom data={apiResponse} />
-    </Container>
+    <Provider store={rootStore}>
+      <Container className="App">
+        {/*<Top show={!loading} />*/}
+        <Bottom data={apiResponse} />
+      </Container>
+    </Provider>
   );
 }
 
