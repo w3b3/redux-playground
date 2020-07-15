@@ -12,15 +12,22 @@ import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles({
   cardRoot: {
-    flex: 1,
-    marginBottom: 10,
+    maxWidth: 320,
+    margin: 10,
   },
   title: {
     fontSize: 14,
     textTransform: "capitalize",
     textDecoration: "underline",
   },
+  cardsWrapper: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+  },
   link: {
+    display: "inline-block",
+    width: "100%",
     fontSize: 10,
   },
   media: {
@@ -34,8 +41,9 @@ const useStyles = makeStyles({
 // const Bottom = (props) => {
 const Bottom = React.memo(function Bottom(props) {
   const { data } = props;
+  const classes = useStyles();
   return data.length ? (
-    <Box>
+    <Box className={classes.cardsWrapper}>
       {data.map((e) => (
         <SinglePhoto key={e.id} data={e} />
       ))}
@@ -54,28 +62,34 @@ const SinglePhoto = React.memo(function SinglePhoto(props) {
 
   return (
     <Card raised={true} className={classes.cardRoot}>
-      <CardContent>
-        <Typography className={classes.title}>
+      <CardContent className={classes.content}>
+        <Typography className={classes.title} gutterBottom="10">
           {data.alt_description}
         </Typography>
-        <Link
-          className={classes.link}
-          color={"textSecondary"}
-          gutterBottom={true}
-          href={data.links.html}
-        >
-          By: {`${data.user.first_name} ${data.user.last_name}`} -{" "}
-          {data.user.links.html}
-        </Link>
         <CardMedia
           className={classes.media}
           image={data.urls.regular}
           title={data.alt_description}
         />
+        <Link
+          align={"right"}
+          className={classes.link}
+          color={"textSecondary"}
+          gutterBottom={true}
+          href={data.links.html}>
+          By: {`${data.user.first_name} ${data.user.last_name}`}
+        </Link>
       </CardContent>
       <CardActions className={classes.actions}>
-        <Button size="small">Previous</Button>
-        <Button size="small">Next</Button>
+        <Button size="small" variant={"contained"} color={"primary"}>
+          Favorito
+        </Button>
+        <Button size="small" variant={"contained"} color={"secondary"}>
+          Download
+        </Button>
+        <Button size="small" variant={"outlined"} color={"secondary"}>
+          Arquivar
+        </Button>
       </CardActions>
     </Card>
   );
