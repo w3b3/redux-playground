@@ -88,7 +88,6 @@ const SinglePhoto = React.memo(function SinglePhoto(props) {
           variant={"h6"}
           component={"h2"}
           color={"primary"}
-          gutterBottom={true}
           title={data.alt_description}>
           {data.alt_description}
         </Typography>
