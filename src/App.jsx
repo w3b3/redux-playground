@@ -21,7 +21,7 @@ function App() {
 
   return (
     <Provider store={rootStore}>
-      <Container className="App">
+      <Container className="App" maxWidth="xl">
         <Top loading={loading} />
         <Bottom data={apiResponse} loading={loading} />
       </Container>

@@ -8,6 +8,7 @@ const useClasses = makeStyles({
   box: {
     display: "flex",
     justifyContent: "space-between",
+    color: "white",
   },
 });
 
@@ -18,11 +19,7 @@ const Top = (props) => {
 
   return (
     <Box className={classes.box}>
-      <Typography
-        variant={"h4"}
-        component={"h1"}
-        color={"primary"}
-        gutterBottom={true}>
+      <Typography variant={"h4"} component={"h1"} gutterBottom={true}>
         Photo Playground
       </Typography>
       {loading ? <CircularProgress /> : null}

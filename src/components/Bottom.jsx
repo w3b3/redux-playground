@@ -14,9 +14,13 @@ import Box from "@material-ui/core/Box";
 const useStyles = makeStyles({
   cardRoot: {
     maxWidth: 320,
-    margin: 10,
+    marginBottom: 16,
+  },
+  content: {
+    padding: 0,
   },
   title: {
+    padding: "4px 8px",
     textTransform: "uppercase",
     maxWidth: "calc(100%)",
     whiteSpace: "nowrap",
@@ -29,9 +33,10 @@ const useStyles = makeStyles({
     justifyContent: "space-around",
   },
   link: {
+    boxSizing: "border-box",
     display: "inline-block",
     width: "100%",
-    marginTop: 10,
+    padding: "4px 8px",
   },
   media: {
     paddingTop: "56.25%", // 16:9
@@ -83,7 +88,8 @@ const SinglePhoto = React.memo(function SinglePhoto(props) {
           variant={"h6"}
           component={"h2"}
           color={"primary"}
-          gutterBottom={true}>
+          gutterBottom={true}
+          title={data.alt_description}>
           {data.alt_description}
         </Typography>
         <CardMedia
@@ -95,6 +101,7 @@ const SinglePhoto = React.memo(function SinglePhoto(props) {
           align={"right"}
           className={classes.link}
           color={"textPrimary"}
+          title={data.links.html}
           href={data.links.html}>
           By: {`${data.user.first_name} ${data.user.last_name}`}
         </Link>
@@ -103,10 +110,10 @@ const SinglePhoto = React.memo(function SinglePhoto(props) {
         <Button size="small" variant={"contained"} color={"primary"}>
           Favorito
         </Button>
-        <Button size="small" variant={"contained"} color={"secondary"}>
+        <Button disabled size="small" variant={"contained"} color={"secondary"}>
           Download
         </Button>
-        <Button size="small" variant={"outlined"} color={"secondary"}>
+        <Button disabled size="small" variant={"outlined"} color={"secondary"}>
           Arquivar
         </Button>
       </CardActions>
